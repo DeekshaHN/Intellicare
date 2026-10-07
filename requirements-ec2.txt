@@ -1,0 +1,4 @@
+# Everything the single EC2 server needs (API + Streamlit + MLflow)
+-r requirements-api.txt
+streamlit>=1.35.0
+requests>=2.31.0

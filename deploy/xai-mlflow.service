@@ -1,0 +1,17 @@
+[Unit]
+Description=MLflow tracking server + model registry
+After=network.target
+
+[Service]
+User=__USER__
+WorkingDirectory=__APP_DIR__
+ExecStart=__APP_DIR__/venv/bin/mlflow server \
+  --host 127.0.0.1 --port 5000 \
+  --backend-store-uri sqlite:////home/__USER__/mlflow-data/mlflow.db \
+  --artifacts-destination s3://__S3_BUCKET__/mlflow-artifacts \
+  --serve-artifacts
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

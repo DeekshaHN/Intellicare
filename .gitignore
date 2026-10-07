@@ -1,0 +1,54 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+build/
+dist/
+.eggs/
+.idea/
+.vscode/
+.ipynb_checkpoints/
+pytest_cache/
+.DS_Store
+*.egg-info/
+# Local environment
+.env
+
+# Editor temp
+*~
+# Logs
+logs/
+
+# Streamlit cache
+.streamlit/
+
+# Virtual environment for Windows
+.venv/
+
+# Large datasets
+*.zip
+data/
+dataset/
+datasets/
+
+# Machine learning model files
+*.h5
+*.keras
+*.ckpt
+*.pb
+
+# Generated outputs
+static_outputs/
+
+# MLflow local tracking
+mlflow.db
+mlartifacts/
+
+# ML model and preprocessing artifacts
+*.pkl
+
+# Local databases
+*.db
